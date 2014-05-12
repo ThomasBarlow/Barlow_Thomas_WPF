@@ -1,3 +1,7 @@
 // JavaScript
 
-var yearBorn = 1955;
+var age; //declaration
+age = 38; //definition
+//storage container = value
+
+var yearOfBirth = 1970;  //declaring and defining on same line
