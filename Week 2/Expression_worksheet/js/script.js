@@ -9,16 +9,16 @@ var age = prompt("How old is your Sparky?");
 age *= 7;
 
 //output to console
-console.log("Sparky\s is " + age + " in dog years!");
+console.log("Sparky is " + age + " in dog years!");
 
 // Slice of Pie - Part I
 
 //User input number of pizzas
-var pizzas = 4   //prompt("How many pizzas have you ordered?");
+var pizzas = 4;   //prompt("How many pizzas have you ordered?");
 //user input number of people
-var people = 10  //prompt("How many people at your party?");
+var people = 10;  //prompt("How many people at your party?");
 //user input number of slices per pie
-var slices = 8   //prompt("How many slices will you get from each pizza?");
+var slices = 8;   //prompt("How many slices will you get from each pizza?");
 
 /*the number of pies multiplied by the amount of slices
 gives the total amount of slices, that divided by the amount
@@ -39,7 +39,7 @@ console.log("Sparky will get to have " + sparkySlice + " left over slices of piz
 //Average Shopping Bill
 
 //create the new array list
-var groceryList = new Array;
+var groceryList = new Array(5);
 //input the amounts into each array slot
 groceryList[0] = 50;
 groceryList[1] = 75;
@@ -70,4 +70,4 @@ var newPriceTax = newPrice + taxAmount;
 
 console.log("Your " + itemDescription + " was originally " + originalPrice + ", " +
     "but after a " + discount + "% discount, it is now $" + newPrice + " without tax, " +
-    "and $" + newPriceTax + " with tax.")
+    "and $" + newPriceTax + " with tax.");
