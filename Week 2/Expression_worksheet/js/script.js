@@ -33,6 +33,7 @@ console.log("Each person will be able to have " + personSlice + " slices of pizz
 //we use the modulo operator to figure out the remainder of a division problem, in this case the amount of slices
 //sparky gets to eat
 var sparkySlice = (pizzas * slices) % people;
+sparkySlice *= people;
 //output of math
 console.log("Sparky will get to have " + sparkySlice + " left over slices of pizza!");
 
@@ -68,6 +69,6 @@ var newPriceTax = newPrice + taxAmount;
 
 
 
-console.log("Your " + itemDescription + " was originally " + originalPrice + ", " +
+console.log("Your " + itemDescription + " was originally $" + originalPrice + ", " +
     "but after a " + discount + "% discount, it is now $" + newPrice + " without tax, " +
     "and $" + newPriceTax + " with tax.");
