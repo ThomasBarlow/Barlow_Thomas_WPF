@@ -35,3 +35,5 @@ var finalWeight = perGallon * tankSize;
 console.log("To get " +ppm+ "ppm fertilizer for a " +tankSize+ "gal tank and a 1:" +ratio+ " ratio setting "
              + "please weigh out " +finalWeight+ "oz of fertilizer and fill to " +tankSize+ "gal with water"
              + " This is " +perGallon+ "oz of fertilizer per gallon of water used.");
+
+alert("Please weigh out " + finalWeight + "oz of fertilizer and add " + tankSize + "gal of water to get " + ppm + "ppm.");
