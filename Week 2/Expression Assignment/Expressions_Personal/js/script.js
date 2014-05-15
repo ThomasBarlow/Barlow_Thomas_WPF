@@ -23,3 +23,5 @@ var tubesYearly = ouncesYearly / ouncesPerTube;
     full tubes
 */
 console.log("You need to buy " + Math.ceil(tubesYearly) + " tubes of toothpaste per year.");
+
+alert("You need to buy " + Math.ceil(tubesYearly) + " tubes of toothpaste per year.");
