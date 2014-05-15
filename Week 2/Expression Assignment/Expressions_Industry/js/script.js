@@ -2,8 +2,8 @@
 
 /*  While I currently work at a coffee shop, my family owns and runs a fairly
     large garden center operation where we grow about 80% of all the plant
-    material we sell to the public.  Being an occasional working helper in the
-    back production one of the many tasks we need to do is mix up a solution of
+    material we sell to the public.  Being an occasional worker helping in the
+    back production, one of the many tasks we need to do is mix up a solution of
     fertilizer concentrate which gets injected into the watering system.  This
     small script will ask how strong the solution should be, how many gallons will
     need to be made, and what setting the fertilizer injector will be on.  All
@@ -32,6 +32,6 @@ var tankSize = prompt("How many gallons in the tank?")
 var perGallon = ( ppm * ratio ) / ( 20 * c );
 var finalWeight = perGallon * tankSize;
 
-console.log("To get " +ppm+ "ppm fertilizer for a " +tankSize+ "gal tank and a " +ratio+ " ratio setting "
+console.log("To get " +ppm+ "ppm fertilizer for a " +tankSize+ "gal tank and a 1:" +ratio+ " ratio setting "
              + "please weigh out " +finalWeight+ "oz of fertilizer and fill to " +tankSize+ "gal with water"
              + " This is " +perGallon+ "oz of fertilizer per gallon of water used.");
