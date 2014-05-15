@@ -27,7 +27,7 @@
 const c = 75;
 var ppm = prompt("What is the desired ppm?");
 var ratio = prompt("What is your injector ratio set to?");
-var tankSize = prompt("How many gallons in the tank?")
+var tankSize = prompt("How many gallons in the tank?");
 
 var perGallon = ( ppm * ratio ) / ( 20 * c );
 var finalWeight = perGallon * tankSize;
