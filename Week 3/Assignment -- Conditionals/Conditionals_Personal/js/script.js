@@ -12,3 +12,27 @@
 
 //  questions will be:  Do you have work tomorrow?  What time do you have work? How much time do you need to get ready?
 
+//  Set three variables to hold information
+var doIHaveWork = "";
+var whatTimeDoIWork = "";
+var howMuchTimeNeeded = "";
+var alarmSetTime;
+
+//  Prompt user for information using while loop to make sure there are no blank inputs
+while (doIHaveWork == ""){
+    doIHaveWork = prompt("Do you have work tomorrow?");
+}
+while (whatTimeDoIWork == "") {
+    whatTimeDoIWork = prompt("What time will you be getting up in the morning?");
+}
+while (howMuchTimeNeeded == "") {
+    howMuchTimeNeeded = prompt("How much time do you need to get ready?")
+}
+
+if (doIHaveWork){
+    alarmSetTime = whatTimeDoIWork - howMuchTimeNeeded;
+} else {
+    alert("Lucky you!! No work tomorrow!!")
+}
+
+alert("Warning!! You have work tomorrow @ " + whatTimeDoIWork + ".  Please set your alarm for " + alarmSetTime);
