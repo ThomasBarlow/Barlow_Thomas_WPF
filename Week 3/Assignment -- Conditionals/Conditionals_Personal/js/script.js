@@ -19,20 +19,22 @@ var howMuchTimeNeeded = "";
 var alarmSetTime;
 
 //  Prompt user for information using while loop to make sure there are no blank inputs
-while (doIHaveWork == ""){
+while (doIHaveWork == "") {
     doIHaveWork = prompt("Do you have work tomorrow?");
-}
-while (whatTimeDoIWork == "") {
-    whatTimeDoIWork = prompt("What time will you be getting up in the morning?");
-}
-while (howMuchTimeNeeded == "") {
-    howMuchTimeNeeded = prompt("How much time do you need to get ready?")
+    if (doIHaveWork == "yes" || doIHaveWork == "y" || doIHaveWork == "YES" || doIHaveWork == "Y") {
+        while (whatTimeDoIWork == "") {
+            whatTimeDoIWork = prompt("What time will you be getting up in the morning?");
+        }
+        while (howMuchTimeNeeded == "") {
+            howMuchTimeNeeded = prompt("How much time do you need to get ready?")
+        }
+        alarmSetTime = whatTimeDoIWork - howMuchTimeNeeded;
+        alert("Warning!! You have work tomorrow @ " + whatTimeDoIWork + ".  Please set your alarm for " + alarmSetTime);
+    } else {
+        alert("Lucky you!! No work tomorrow!!")
+    }
 }
 
-if (doIHaveWork == "yes" || doIHaveWork == "y" || doIHaveWork == "YES" || doIHaveWork == "Y"){
-    alarmSetTime = whatTimeDoIWork - howMuchTimeNeeded;
-} else {
-    alert("Lucky you!! No work tomorrow!!")
-}
 
-alert("Warning!! You have work tomorrow @ " + whatTimeDoIWork + ".  Please set your alarm for " + alarmSetTime);
+
+
