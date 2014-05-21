@@ -29,7 +29,7 @@ while (howMuchTimeNeeded == "") {
     howMuchTimeNeeded = prompt("How much time do you need to get ready?")
 }
 
-if (doIHaveWork){
+if (doIHaveWork == "yes" || doIHaveWork == "y" || doIHaveWork == "YES" || doIHaveWork == "Y"){
     alarmSetTime = whatTimeDoIWork - howMuchTimeNeeded;
 } else {
     alert("Lucky you!! No work tomorrow!!")
