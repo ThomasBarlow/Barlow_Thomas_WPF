@@ -22,42 +22,44 @@ var coffeePrice;
 //  If the size is small revert to switch block for small sizes
 //  If large revert to switch block for large sizes
 
+var coffeeUpper = coffeeType.toUpperCase();
+
 if (coffeeSize == "S" || coffeeSize == "s") {
     coffeeSize = "Small";
-    switch (coffeeType) {
-        case "Bali":
+    switch (coffeeUpper) {
+        case "BALI":
             coffeePrice = "$2.50";
             break;
-        case "Sumatra":
+        case "SUMATRA":
             coffeePrice = "$2.55";
             break;
-        case "Flores":
+        case "FLORES":
             coffeePrice = "$2.40";
             break;
-        case "Iced":
+        case "ICED":
             coffeePrice = "$3.00";
             break;
-        case "Latte":
+        case "LATTE":
             coffeePrice = "$3.50";
             break;
 
     }
 } else if (coffeeSize == "L" || coffeeSize == "l") {
     coffeeSize = "Large";
-    switch (coffeeType) {
-        case "Bali":
+    switch (coffeeUpper) {
+        case "BALI":
             coffeePrice = "$2.60";
             break;
-        case "Sumatra":
+        case "SUMATRA":
             coffeePrice = "$2.75";
             break;
-        case "Flores":
+        case "FLORES":
             coffeePrice = "$2.55";
             break;
-        case "Iced":
+        case "ICED":
             coffeePrice = "$4.00";
             break;
-        case "Latte":
+        case "LATTE":
             coffeePrice = "$4.50";
             break;
 
