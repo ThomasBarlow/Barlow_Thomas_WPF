@@ -22,19 +22,22 @@ var coffeePrice;
 //  If the size is small revert to switch block for small sizes
 //  If large revert to switch block for large sizes
 
+// tests weather or not the input was blank and if it is asks again
 while (coffeeSize == "") {
     coffeeSize = prompt("What size coffee would you like?  Please enter 'S' for small or 'L' for large");
 }
 
+// tests weather or not the input was blank and if it is asks again
 while (coffeeType == "") {
     coffeeType = prompt("What type of coffee would you like? Please enter 'Bali', 'Sumatra', 'Flores', 'Iced'" +
         " or 'Latte'");
 }
 
 
-
+//  convert coffee type to uppercase so it can be compared no matter what the case input was
 var coffeeUpper = coffeeType.toUpperCase();
 
+//  main switch statement
 if (coffeeSize == "S" || coffeeSize == "s") {
     coffeeSize = "Small";
     switch (coffeeUpper) {
