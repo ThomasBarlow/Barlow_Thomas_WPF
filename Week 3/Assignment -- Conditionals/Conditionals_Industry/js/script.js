@@ -64,5 +64,6 @@ if (coffeeSize == "S" || coffeeSize == "s") {
     }
 }
 
+//  output to console and an alert box
 console.log("You are getting a " + coffeeSize + " " + coffeeType + " coffee which will cost " + coffeePrice);
 alert("You are getting a " + coffeeSize + " " + coffeeType + " coffee which will cost " + coffeePrice);
