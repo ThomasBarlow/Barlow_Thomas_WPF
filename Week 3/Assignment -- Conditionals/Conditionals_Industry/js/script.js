@@ -22,6 +22,17 @@ var coffeePrice;
 //  If the size is small revert to switch block for small sizes
 //  If large revert to switch block for large sizes
 
+while (coffeeSize == "") {
+    coffeeSize = prompt("What size coffee would you like?  Please enter 'S' for small or 'L' for large");
+}
+
+while (coffeeType == "") {
+    coffeeType = prompt("What type of coffee would you like? Please enter 'Bali', 'Sumatra', 'Flores', 'Iced'" +
+        " or 'Latte'");
+}
+
+
+
 var coffeeUpper = coffeeType.toUpperCase();
 
 if (coffeeSize == "S" || coffeeSize == "s") {
