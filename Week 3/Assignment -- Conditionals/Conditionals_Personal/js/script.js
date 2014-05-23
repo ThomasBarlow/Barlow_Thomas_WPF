@@ -23,7 +23,7 @@ while (doIHaveWork == "") {
     doIHaveWork = prompt("Do you have work tomorrow?");
     if (doIHaveWork == "yes" || doIHaveWork == "y" || doIHaveWork == "YES" || doIHaveWork == "Y") {
         while (whatTimeDoIWork == "") {
-            whatTimeDoIWork = prompt("What time will you be getting up in the morning?");
+            whatTimeDoIWork = prompt("What time is work at in the morning?");
         }
         while (howMuchTimeNeeded == "") {
             howMuchTimeNeeded = prompt("How much time do you need to get ready?")
@@ -34,7 +34,3 @@ while (doIHaveWork == "") {
         alert("Lucky you!! No work tomorrow!!")
     }
 }
-
-
-
-
