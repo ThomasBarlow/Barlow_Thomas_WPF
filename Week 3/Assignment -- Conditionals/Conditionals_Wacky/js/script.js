@@ -19,10 +19,43 @@ fish[4] = 'marlin';
 fish[5] = 'carp';
 fish[6] = 'marlin';
 
-var fishCount = '';
+var fishCount = 0;
 var findFish = '';
 var fishType = '';
 
+findFish = prompt("Would you like to find fish today? Please enter 'Y' or 'N'.")
 
+if (findFish == 'n' || 'N') {
+    alert("Sorry you don't want to find any fish! Have a good day!");
+    console.log("No fish finding today!");
+} else if (findFish == 'y' || 'yes' || 'Y' || 'Yes') {
+    while (fishType == '') {
+        prompt("Please enter either 'tuna' 'salmon' 'marlin' or 'carp'");
+    }
+
+    if (fish[0] == fishType) {
+        fishCount++;
+    }
+    if (fish[1] == fishType) {
+        fishCount++;
+    }
+    if (fish[2] == fishType) {
+        fishCount++;
+    }
+    if (fish[3] == fishType) {
+        fishCount++;
+    }
+    if (fish[4] == fishType) {
+        fishCount++;
+    }
+    if (fish[5] == fishType) {
+        fishCount++;
+    }
+    if (fish[6] == fishType) {
+        fishCount++;
+    }
+
+    alert("There are " + fishCount + " " + fishType + " fish in the bowl today!");
+}
 
 
