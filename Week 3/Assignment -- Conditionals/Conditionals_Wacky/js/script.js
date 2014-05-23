@@ -31,7 +31,7 @@ var fishType;
 // user input placed into the findFish var
 findFish = prompt("Would you like to find fish today? Please enter 'Y' or 'N'.");
 
-// making sure user inputs for the findFish var
+// making sure user inputs for the findFish variable
 while (findFish == '') {
     findFish = prompt("Please enter either 'Y' or 'N'");
 }
