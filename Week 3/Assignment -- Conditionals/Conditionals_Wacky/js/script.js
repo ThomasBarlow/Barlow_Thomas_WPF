@@ -33,13 +33,13 @@ findFish = prompt("Would you like to find fish today? Please enter 'Y' or 'N'.")
 
 // making sure user inputs for the findFish var
 while (findFish == '') {
-    prompt("Please enter either 'Y' or 'N'");
+    findFish = prompt("Please enter either 'Y' or 'N'");
 }
 // conditional checking to see if the user entered 1 of 4 different answers
 if (findFish === 'y' || findFish === 'yes' || findFish === 'Y' || findFish === 'Yes') {
       fishType = prompt("Please enter either 'tuna' 'salmon' 'marlin' or 'carp'");
       while (fishType == '') {
-          prompt("You must enter a fish type: 'tuna' 'salmon' 'marlin' 'carp' please!!");
+          fishType = prompt("You must enter a fish type: 'tuna' 'salmon' 'marlin' 'carp' please!!");
       }
     // variable that takes fishType string and converts it to lower case for easier comparison
     lowerFishType = fishType.toLowerCase();
