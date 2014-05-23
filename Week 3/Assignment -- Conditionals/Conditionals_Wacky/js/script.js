@@ -20,42 +20,41 @@ fish[5] = 'carp';
 fish[6] = 'marlin';
 
 var fishCount = 0;
-var findFish = '';
-var fishType = '';
+var findFish;
+var fishType;
 
-findFish = prompt("Would you like to find fish today? Please enter 'Y' or 'N'.")
+findFish = prompt("Would you like to find fish today? Please enter 'Y' or 'N'.");
 
-if (findFish == 'n' || 'N') {
-    alert("Sorry you don't want to find any fish! Have a good day!");
-    console.log("No fish finding today!");
-} else if (findFish == 'y' || 'yes' || 'Y' || 'Yes') {
-    while (fishType == '') {
-        prompt("Please enter either 'tuna' 'salmon' 'marlin' or 'carp'");
-    }
+if (findFish === 'y' || findFish === 'yes' || findFish === 'Y' || findFish === 'Yes') {
+      fishType = prompt("Please enter either 'tuna' 'salmon' 'marlin' or 'carp'");
+      lowerFishType = fishType.toLowerCase();
 
-    if (fish[0] == fishType) {
+
+    if (fish[0] == lowerFishType) {
         fishCount++;
     }
-    if (fish[1] == fishType) {
+    if (fish[1] == lowerFishType) {
         fishCount++;
     }
-    if (fish[2] == fishType) {
+    if (fish[2] == lowerFishType) {
         fishCount++;
     }
-    if (fish[3] == fishType) {
+    if (fish[3] == lowerFishType) {
         fishCount++;
     }
-    if (fish[4] == fishType) {
+    if (fish[4] == lowerFishType) {
         fishCount++;
     }
-    if (fish[5] == fishType) {
+    if (fish[5] == lowerFishType) {
         fishCount++;
     }
-    if (fish[6] == fishType) {
+    if (fish[6] == lowerFishType) {
         fishCount++;
     }
 
     alert("There are " + fishCount + " " + fishType + " fish in the bowl today!");
+} else if (findFish === 'n' || findFish === 'N')  {
+    alert("Sorry you don't want to find any fish! Have a good day!");
+    console.log("No fish finding today!");
 }
-
 
