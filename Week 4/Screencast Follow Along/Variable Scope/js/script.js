@@ -2,6 +2,8 @@
 Variable Scope
  */
 
+var width = 5;
+
 function outputMsg() {
     console.log("Hello World");
 }
@@ -12,7 +14,5 @@ function calcArea() {
     var area = width * height;
     console.log(area);
 }
-
-calcArea();
-calcArea();
+console.log(width);
 calcArea();
