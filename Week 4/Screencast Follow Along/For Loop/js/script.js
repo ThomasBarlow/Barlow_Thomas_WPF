@@ -2,17 +2,6 @@
 For Loop
  */
 
-function outputMsg() {
-    console.log("Hello World");
+for (var i = 10; i > 0; i--){
+    console.log(i + ' kegs on the wall');
 }
-
-function calcArea() {
-    var width = 20;
-    var height = 30;
-    var area = width * height;
-    console.log(area);
-}
-
-calcArea();
-calcArea();
-calcArea();
