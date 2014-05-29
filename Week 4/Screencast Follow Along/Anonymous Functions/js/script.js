@@ -2,16 +2,13 @@
 Anonymous Functions
  */
 
-function outputMsg() {
-    console.log("Hello World");
+/* var functionName = function() {
+    //code to run
 }
+*/
 
-function calcArea() {
-    var width = 20;
-    var height = 30;
+
+var calcArea = function(width, height){
     var area = width * height;
-    console.log(area);
+    return area;
 }
-
-calcArea();
-calcArea();
