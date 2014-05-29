@@ -1,18 +1,10 @@
 /*
 Do While Loop
  */
+var c = 10;
 
-function outputMsg() {
-    console.log("Hello World");
+do {
+    console.log(c + ' kegs on the wall');
+    c--;
 }
-
-function calcArea() {
-    var width = 20;
-    var height = 30;
-    var area = width * height;
-    console.log(area);
-}
-
-calcArea();
-calcArea();
-calcArea();
+while(c > 0);
