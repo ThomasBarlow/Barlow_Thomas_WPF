@@ -2,17 +2,9 @@
 While Loop
  */
 
-function outputMsg() {
-    console.log("Hello World");
-}
+var b = 10;
 
-function calcArea() {
-    var width = 20;
-    var height = 30;
-    var area = width * height;
-    console.log(area);
+while ( b > 0 ){
+    console.log(b);
+    b--;
 }
-
-calcArea();
-calcArea();
-calcArea();
