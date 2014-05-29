@@ -2,17 +2,14 @@
 Functions vs Procedures
  */
 
-function outputMsg() {
-    console.log("Hello World");
-}
-
-function calcArea() {
-    var width = 20;
-    var height = 30;
+//this is a function
+function calcAreaF(width, height){
     var area = width * height;
-    console.log(area);
+    return area; // has return
 }
 
-calcArea();
-calcArea();
-calcArea();
+//This is a procedure
+function calcAreaP(width, height){
+    var area = width * height;
+    console.log(area); //no return
+}
