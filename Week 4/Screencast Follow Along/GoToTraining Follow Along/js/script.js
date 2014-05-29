@@ -33,3 +33,12 @@ while(isNaN(maximum) || maximum === ""){
 
 }
 
+/*
+var userInput = prompt("Please type in Y or N");
+
+while(userInput != "Y" && userInput != "N") {
+
+    userInput = prompt("Please type in Y or N");
+}
+*/
+
