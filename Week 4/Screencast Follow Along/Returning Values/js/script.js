@@ -2,17 +2,11 @@
 Returning Values
  */
 
-function outputMsg() {
-    console.log("Hello World");
+var total = calcArea(30, 20);
+
+function calcArea(w, h){
+    var area = w * h;
+    return area; // function spitting info out
 }
 
-function calcArea() {
-    var width = 20;
-    var height = 30;
-    var area = width * height;
-    console.log(area);
-}
-
-calcArea();
-calcArea();
-calcArea();
+console.log(total);
