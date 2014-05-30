@@ -9,7 +9,7 @@
 
 var grillLength = prompt("How long is your grill?");
 //  conditional checks to see if you entered the correct information
-while(isNaN(grillLength || grillLength === "")){
+while(isNaN(grillLength) || grillLength === ""){
     grillLength = ("Please enter the Length of your grill: ");
 }
 //  this sets variable to a number for proper calculations
