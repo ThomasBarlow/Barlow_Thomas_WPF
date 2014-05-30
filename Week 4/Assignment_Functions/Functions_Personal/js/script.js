@@ -26,21 +26,24 @@ var seasonalBadgePrice = prompt("How much is a SEASONAL badge?");
 while(isNaN(seasonalBadgePrice)){
     var seasonalBadgePrice = prompt("Please enter a NUMBER");
 }
-
+//  var calling the function
 var answer = buySeasonalBadge(daysOfBeachLeft, dailyBadgePrice, seasonalBadgePrice);
 
+//  function used to do calculations, parameters included
 function buySeasonalBadge(days, dayPrice, seasonPrice){
+    //  var created to hold string answer
     var buyTicket = "";
     if (days * dayPrice > seasonPrice){
-        console.log("You should think of buying a seasonal ticket")
+        console.log("You should think of buying a seasonal ticket");
         buyTicket = "Buy a seasonal ticket";
     } else if (days * dayPrice == seasonPrice){
         console.log("It doesn't matter, you will brake even.");
         buyTicket = "Either way";
     } else if (days * dayPrice < seasonPrice){
-        console.log("You don't need a seasonal ticket")
+        console.log("You don't need a seasonal ticket");
         buyTicket = "You don't need a seasonal ticket";
     }
+    //  returns the answer in string form to the function call
     return buyTicket;
 }
 
