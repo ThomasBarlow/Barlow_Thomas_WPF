@@ -49,4 +49,4 @@ function burgerArea(radius){
 //  function call
 var burgerToFit = Math.floor(grillArea(grillLength, grillWidth) / burgerArea(burgerWidth));
 
-console.log("You can fit " + burgerToFit + " burgers onto the grill at once!")
+console.log("You can fit " + burgerToFit + " burgers onto the grill at once!");
